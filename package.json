@@ -2,11 +2,14 @@
   "name": "next_portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://AdityaLatta.github.io/tictactoe",
   "scripts": {
+    "deploy":"npm run build && gh-pages -d out",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "eslint": "8.40.0",
@@ -14,5 +17,8 @@
     "next": "13.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
